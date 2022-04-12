@@ -26,7 +26,7 @@ function App() {
         className="choose-file"
         onChange={(e) => fileSelectedHandler(e)}
       />
-      {allPhoto.map((each, i) => {
+      {allPhoto.reverse().map((each, i) => {
         return (
           <div className="items">
             <div key={each.lastModified} className="file">
